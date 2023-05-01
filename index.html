@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Password generator</title>
+</head>
+<body>
+    
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Nome Cognome</h4>
+                <input type="text" id="username">
+            </div>
+            <div class="col">
+                <h4>Inserisci i km</h4>
+                <input type="number" id="userKm">
+            </div>
+            <div class="col">
+                <h4>Inserisci età</h4>
+                <input type="number" id="usereta">
+            </div>
+        </div>
+        <div class="center">
+            <button id="genera">Genera</button>
+            <button id="annulla">Annulla</button>
+        </div>
+    </div>
+    
+    <div class="none">
+        <h1>IL TUO BIGLIETTO</h1>
+        <div class="container">
+            <h2>Dettaglio passeggeri</h2>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <h4>NOME PASSEGGERO</h4>
+                    <h4 id="nome">nome passggero</h4>
+                </div>
+                <div class="col big">
+                    <div class="risultato">
+                        <h4>
+                            Offerta
+                        </h4>
+                        <h4 id="offerta">
+                            Offerta
+                        </h4>
+                    </div>
+                    <div class="risultato">
+                        <h4>
+                            Carrozza
+                        </h4>
+                        <h4 id="carrozza">
+                            Carrozza
+                        </h4>
+                    </div>
+                    <div class="risultato">
+                        <h4>
+                            Codice CP
+                        </h4>
+                        <h4 id="codicecp">
+                            Codice CP
+                        </h4>
+                    </div>
+                    <div class="risultato">
+                        <h4>
+                            Costo Biglietto
+                        </h4>
+                        <h4 id="ticket">
+                            Costo Biglietto
+                        </h4>
+                    </div>
+                </div>
+        
+            </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
