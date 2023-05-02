@@ -11,7 +11,7 @@
 
 
 // Dichiaro le variabili
-let userName, userKm, userEta, prezzoBiglietto, finalPrice, messaggio, buttonGenera, buttonAnnulla, offerta, appear;
+let finalPrice, buttonGenera, buttonAnnulla, offerta;
 offerta = document.getElementById('offerta');
 
 
@@ -24,23 +24,23 @@ buttonGenera = document.getElementById("genera");
 
 buttonGenera.addEventListener('click',
     function() {
-        appear = document.querySelector('.none');
+        let appear = document.querySelector('.none');
         appear.classList.add('active');
 
         // Prendo dall'input il nome utente
-        userName = document.getElementById("username").value;
+        let userName = document.getElementById("username").value;
         console.log(userName);
 
         // Prendo dall'input i km che l'user dovrà percorrere
-        userKm = document.getElementById("userKm").value;
+        let userKm = document.getElementById("userKm").value;
         console.log(userKm);
 
         // Chiedo l'età all'user
-        userEta = document.getElementById("usereta").value;
+        let userEta = document.getElementById("usereta").value;
         console.log(userEta);
 
         // Calcolo il prezzo del biglietto intero
-        prezzoBiglietto = tariffaBiglietto * userKm
+        let prezzoBiglietto = tariffaBiglietto * userKm
         console.log(prezzoBiglietto);
 
         // Istruzioni Condizionali
